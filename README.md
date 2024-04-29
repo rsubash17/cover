@@ -186,7 +186,7 @@ Publish the website in the LocalHost.
     <div class="end">SEC</div>
     <div class="number">8248040448</div>
 
-    <div class="author">RAHUL VIJAY V</div>
+    <div class="author">SUBASH R</div>
 
   </div>
 </body>
