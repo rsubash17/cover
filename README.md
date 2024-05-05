@@ -1,5 +1,5 @@
 # Ex.06 Book Front Cover Page Design
-## Date:
+## Date:05-05-2024
 
 ## AIM:
 To design a book front cover page using HTML and CSS.
@@ -32,169 +32,123 @@ Publish the website in the LocalHost.
 
 ## PROGRAM:
 ```
-<!DOCTYPE html>
 <html>
+    <head>
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <style>
+            .bookpage{
+                width: 400px;
+                height: 600px;
+                color: red;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 20px;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                background-image:url(b.jpg);
+                background-size: cover;
+            }
+            .insight{
+                color: red;
 
-<head>
-  <title>Book Cover</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color:white;
-    }
+            }
+            .hrstyle{
+                width: 100px;
+            }
+            .author{
+                display: inline;
+                position: relative;
+                color: blanchedalmond;
+                top: 200px;
 
-    .book-cover {
-      width: 500px;
-      height: 700px;
-      background-color:black;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      margin: 50px auto;
-      position: relative;
-    }
-    
-    .book-cover .insight {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      font-size: 24px;
-      font-weight: bold;
-      color: azure;
-    }
-    .book-cover .line1
-    {
-      position: absolute;
-      top: 40px;
-      left: 10px;
-      width: 80px;
-    }
-    .book-cover .title1 {
-      position: absolute;
-      top: 80px;
-      left: 50px;
-      font-size: 40px;
-      font-weight: bold;
-      color:  white;
-    }
-    .book-cover .title2 {
-      position: absolute;
-      top: 130px;
-      left: 30px;
-      font-size: 40px;
-      font-weight: bold;
-      color:  white;
-    }
+                font-family: Georgia;
+                font-size: medium;
+            }
+            .booktitle{
+                color:black;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: larger;
+                text-align: center;
+                position: relative;
+                top: 30px;
 
-    .book-cover .subtitle1 {
-      position: absolute;
-      top: 470px;
-      left: 20px;
-      font-size: 16px;
-      font-weight: bold;
-      color:  white;
-    }
-    .book-cover .subtitle2 {
-      position: absolute;
-      top: 500px;
-      left: 20px;
-      font-size: 16px;
-      font-weight: bold;
-      color: white;
-    }
-    .book-cover .subtitle3 {
-      position: absolute;
-      top: 530px;
-      left: 20px;
-      font-size: 16px;
-      font-weight: bold;
-      color: white;
-    }
-    .book-cover .line2
-    {
-      position: absolute;
-      top: 480px;
-      left: 20px;
-      width: 160px;
-    }
-    .book-cover .line3
-    {
-      position: absolute;
-      bottom:38px;
-      left: 20px;
-      width: 115px;
-    }
+            
+            }
+            .id{
+                width: 400px;
+                position: relative;
+                top: 210px;
 
+            }
+            .pub{
+                font-size: medium;
+                position: relative;
+                top: 165px;
+                left: 330px;
+                color:blanchedalmond;
+            }
+            .ed{
+                color: whitesmoke;
+                font-size: medium;
+                font-family: Verdana;
+                position: relative;
+                top: 115px;
 
-    .book-cover .author {
-      position: absolute;
-      bottom: 25px;
-      left: 20px;
-      font-size: 18px;
-      color: whitesmoke;
-    }
+            }
+            .subtitle{
+                color:white;
+                font-family: 'Tahoma';
+                font-size: large;
+                position: relative;
+                top: 40px;
+            }
+            .mypic{
+                position: relative;
+                top: 170px;
+                left: 260px;
+                width: 100px;
+                height: 100px;
+                background-size: cover;
+            }
+        </style>
+        <title>Book Cover Page</title>
 
-    .book-cover .number {
-      position: absolute;
-      bottom: 5px;
-      left: 20px;
-      font-size: 18px;
-      color: white;
-    }
+    </head>
+    <body>
+        <div class="bookpage">
+            <div class="insight">
+                SEC INSIGHT
+            </div>
+            <div class="hrstyle">
+                <hr style="color: yellow;">
+            </div>
+            <div class="booktitle">
+                <h1>"A COMPREHENSIVE GUIDE to Web Devlopment Wonders"</h1>
+            </div>
+            <div class="subtitle">
+                with futuristic HTML, CSS and JS
+            </div>
+            <div class="mypic">
+                <img src="ss.jpg" width="130" height="145" alt="">
+            </div>
+            <div class="id">
+                <hr style="color: orange;">
+            </div>
+            <div class="author">
+                <p><b>Subash R</b></p>
+            </div>
+            <div class="pub">
+                SEC
+            </div>
+            <div class="ed">
+                <b>Latest Edition</b>
+            </div>
+        </div>
 
-    .book-cover .end {
-      position: absolute;
-      bottom: 5px;
-      right: 50px;
-      font-size: 18px;
-      color: white;
-    }
-    .book-cover .mypic
-    {
-      position: relative;
-      top:550px;
-      left: 370px;
-      width : 8px;
-      height: 8px;
-      background-size:fit;
-    }
-
-
-    .book-cover .image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      position: absolute;
-      top:  0;
-      left: 10;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="book-cover">
-    <img src="back.jpg" alt="Book Cover Image" class="image">
-    <div class="insight">WEB TECHNOLOGY</div>
-    <div class="line1"><hr style="color:blanchedalmond"></div>
-    <div class="title1">WEB DEVELOPEMENT </div>
-    <div class="title2">  THE COMPLETE REFERENCE</div>
-    <div class="subtitle1">THE WEBTECHNOLOGY UNVEILING:</div>
-    <div class="line2"><hr style="color:blanchedalmond"></div>
-    <div class="subtitle2">Unraveling the</div>
-    <div class="subtitle3">Secrets of Web Technology</div>
-    <div class="line3"><hr style="color:blanchedalmond"></div>
-    <div class="mypic"><img src=photo.jpg width="120" height="120" ></div>
-    <div class="end">SEC</div>
-    <div class="number">8248040448</div>
-
-    <div class="author">SUBASH R</div>
-
-  </div>
-</body>
-
-</html>
-```
+    </body>
+</html>```
 ## OUTPUT:
-![WhatsApp Image 2024-04-23 at 11 49 22_c9d74bed](https://github.com/rsubash17/cover/assets/147139828/a6444fae-171e-4a87-8cf4-a5ec562473c7)
+![image](https://github.com/rsubash17/cover/assets/147139828/60bc69a4-21c0-4891-b450-d236d53384e6)
 
 
 ## RESULT:
