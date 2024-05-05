@@ -146,9 +146,10 @@ Publish the website in the LocalHost.
         </div>
 
     </body>
-</html>```
+</html>
+```
 ## OUTPUT:
-![image](https://github.com/rsubash17/cover/assets/147139828/60bc69a4-21c0-4891-b450-d236d53384e6)
+![ss(1)](https://github.com/rsubash17/cover/assets/147139828/6539fe24-203e-4378-814b-8fb7d8dc0c35)
 
 
 ## RESULT:
